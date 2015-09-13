@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+    has_many :ribbits
+    
     def attr_accesible
     attr_accessible :avatar_url, :email, :name, :password, :password_confirmation, :username
 has_secure_password
